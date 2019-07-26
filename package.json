@@ -9,7 +9,7 @@
     "lint": "ng lint",
     "e2e": "ng e2e",
     "postinstall": "ng build --aot --prod",
-    "heroku-postbuild": "cd client-app && npm install"
+    "heroku-postbuild": "cd ClientApp && npm install"
   },
   "private": true,
   "dependencies": {
