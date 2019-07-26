@@ -26,7 +26,11 @@ export class ShowMeComponent {
           'Software product development and promotion',
           'Project Management'
           ]},
-        { id: 3, title: '', cols: 1, rows: 2, content: '' },
+        { id: 3, title: '', cols: 1, rows: 2, content: ['Strategy development',
+          'Business requirement creation',
+          'Staff training and instructing',
+          'Excellent communication skills' 
+          ] },
         { id: 4, title: 'Card 4', cols: 1, rows: 2, content: '' }
       ];
     })

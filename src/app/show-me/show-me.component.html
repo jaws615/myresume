@@ -1,26 +1,42 @@
 <div class="grid-container">
   <h1 class="mat-h1">Renzo Ramos</h1>
   <mat-grid-list cols="2" rowHeight="150px">
+    
     <mat-grid-tile *ngFor="let card of cards | async" [colspan]="card.cols" [rowspan]="card.rows">
-      <mat-card class="dashboard-card">
+    <mat-grid-tile-header *ngIf="card.id === 2 || card.id === 3">
+        <mat-card>Simple card</mat-card>
+    </mat-grid-tile-header>
+      <mat-card *ngIf="card.id === 1" class="dashboard-card">
         <mat-card-header>
           <mat-card-title>
-            {{card.title}}
-            
+            {{card.title}}  
           </mat-card-title>
         </mat-card-header>
-        <mat-card-content class="dashboard-card-content">
+        <mat-card-content>
 
           <div *ngIf="card.id === 1">{{card.content}}</div>
-          <div *ngIf="card.id === 2">
-              <mat-list role="list">
-                  <mat-list-item role="listitem" *ngFor="let skill of card.content">{{skill}}</mat-list-item>
-                  <mat-list-item role="listitem">Item 2</mat-list-item>
-                  <mat-list-item role="listitem">Item 3</mat-list-item>
-                </mat-list>
-          </div>
+          
         </mat-card-content>
       </mat-card>
+      <mat-card *ngIf="card.id === 2 || card.id === 3" class="dashboard-card">
+          <mat-card-header>
+            <mat-card-title>
+              {{card.title}}
+              
+            </mat-card-title>
+          </mat-card-header>
+          <mat-card-content>
+  
+                <mat-list role="list">
+                    <mat-list-item role="listitem" *ngFor="let skill of card.content">
+                        <mat-icon mat-list-icon>done</mat-icon>
+                        <p mat-line> {{skill}} </p>
+                      
+                    </mat-list-item>
+  
+                  </mat-list>
+          </mat-card-content>
+        </mat-card>
     </mat-grid-tile>
   </mat-grid-list>
 </div>
