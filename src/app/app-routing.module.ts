@@ -5,7 +5,7 @@ import { ShowMeComponent } from './show-me/show-me.component';
 
 
 const routes: Routes = [
-  { path: 'resume', component: ShowMeComponent }
+  { path: '', component: ShowMeComponent }
 ];
 
 @NgModule({
