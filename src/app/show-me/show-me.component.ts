@@ -30,8 +30,7 @@ export class ShowMeComponent {
           'Business requirement creation',
           'Staff training and instructing',
           'Excellent communication skills' 
-          ] },
-        { id: 4, title: 'Card 4', cols: 1, rows: 2, content: '' }
+          ] }
       ];
     })
   );

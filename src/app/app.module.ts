@@ -11,14 +11,16 @@ import { MatMenuModule } from '@angular/material/menu';
 import { MatIconModule } from '@angular/material/icon';
 import { MatButtonModule } from '@angular/material/button';
 import { MatListModule } from '@angular/material/list';
-
+import { MatExpansionModule } from '@angular/material/expansion';
 
 import { LayoutModule } from '@angular/cdk/layout';
+import { ExpansionPanelComponent } from './expansion-panel/expansion-panel.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    ShowMeComponent
+    ShowMeComponent,
+    ExpansionPanelComponent
   ],
   imports: [
     BrowserModule,
@@ -30,7 +32,8 @@ import { LayoutModule } from '@angular/cdk/layout';
     MatIconModule,
     MatButtonModule,
     LayoutModule,
-    MatListModule
+    MatListModule,
+    MatExpansionModule
   ],
   providers: [],
   bootstrap: [AppComponent]
