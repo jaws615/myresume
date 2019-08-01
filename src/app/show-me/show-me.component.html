@@ -1,11 +1,11 @@
 <div class="grid-container">
   <h1 class="mat-h1">Dashboard</h1>
-  <mat-grid-list cols="2" rowHeight="350px">
+  <mat-grid-list cols="4" rowHeight="350px" color="primary">
     <mat-grid-tile *ngFor="let card of cards | async" [colspan]="card.cols" [rowspan]="card.rows">
-      <mat-card class="dashboard-card">
+      <mat-card class="dashboard-card mat-card-accent" color="warn">
         <mat-card-header>
           <mat-card-title>
-            {{card.title}}
+            <h3 class="accent"> {{card.title}}</h3>
             <button mat-icon-button class="more-button" [matMenuTriggerFor]="menu" aria-label="Toggle menu">
               <mat-icon>more_vert</mat-icon>
             </button>
@@ -16,8 +16,12 @@
           </mat-card-title>
         </mat-card-header>
         <mat-card-content class="dashboard-card-content">
-          <div>Card Content Here</div>
+          <p class="news" color="accent">Card Content Here</p>
         </mat-card-content>
+        <mat-card-actions>
+          <button color="primary" selected="true" mat-button>LIKE</button>
+          <button color="accent" selected="true" mat-button>SHARE</button>
+        </mat-card-actions>
       </mat-card>
     </mat-grid-tile>
   </mat-grid-list>
