@@ -1,20 +1,18 @@
-<mat-accordion>
-    <mat-expansion-panel>
-            <mat-expansion-panel-header>
-                <mat-panel-title>
-                About
-                </mat-panel-title>
-                <mat-panel-description>
-                </mat-panel-description>
-            </mat-expansion-panel-header>
-            Dedicated Software Development Director with over 18 years of progressive information technology experience, 10 of them in managerial positions. Background includes leading large/small teams of technical professionals, creating and improving project management strategies, cultivating customer relationships and improving team and project performance. Strong communicator, able to find the proper communication approach to executive or subordinate. 
-            </mat-expansion-panel>
-    <mat-expansion-panel>
+<mat-accordion class="example-headers-align" multi="true">
+    <mat-expansion-panel expanded id="aboutPanel">
         <mat-expansion-panel-header>
-            <mat-panel-title> Skills & Knowledge </mat-panel-title>
+            <mat-panel-title><mat-icon>account_circle</mat-icon> <span class="sectionTitle">About</span>  </mat-panel-title>
             <mat-panel-description>
             </mat-panel-description>
-            </mat-expansion-panel-header>
+        </mat-expansion-panel-header>
+        Dedicated Software Development Director with over 18 years of progressive information technology experience, 10 of them in managerial positions. Background includes leading large/small teams of technical professionals, creating and improving project management strategies, cultivating customer relationships and improving team and project performance. Strong communicator, able to find the proper communication approach to executive or subordinate. 
+    </mat-expansion-panel>
+    <mat-expansion-panel id="skillsPanel">
+        <mat-expansion-panel-header>
+            <mat-panel-title><mat-icon>build</mat-icon> <span class="sectionTitle">Skills & Knowledge</span> </mat-panel-title>
+            <mat-panel-description>
+            </mat-panel-description>
+        </mat-expansion-panel-header>
             <div layout="column">
                     <div flex="">
                         <mat-list>
@@ -55,20 +53,17 @@
                 </div>
             
     </mat-expansion-panel>
-    <mat-expansion-panel>
-            <mat-expansion-panel-header>
-                <mat-panel-title>
-                Professional Experience
-                </mat-panel-title>
-                <mat-panel-description>
-                </mat-panel-description>
-            </mat-expansion-panel-header>
-        <mat-expansion-panel>
+    <mat-expansion-panel [expanded]="true" id="Professional Experience">
+        <mat-expansion-panel-header>
+            <mat-panel-title> <mat-icon>accessibility_new</mat-icon>  <span class="sectionTitle"> Professional Experience </span> </mat-panel-title>
+            <mat-panel-description></mat-panel-description>
+        </mat-expansion-panel-header>
+        <mat-expansion-panel id="Jaggaer">
             <mat-expansion-panel-header>
                 <mat-panel-title>
                 Jaggaer
                 </mat-panel-title>
-                <mat-panel-description>
+                <mat-panel-description class="descriptionRight">
                         February 2018 – July 2019 
                 </mat-panel-description>
             </mat-expansion-panel-header>
@@ -92,7 +87,7 @@
                 <mat-panel-title>
                         Bravosolution
                 </mat-panel-title>
-                <mat-panel-description>
+                <mat-panel-description class="descriptionRight">
                         August 2016 – February 2018 
                 </mat-panel-description>
             </mat-expansion-panel-header>
@@ -114,7 +109,7 @@
                 <mat-panel-title>
                         Technical Services Associates Inc. DBA Puridiom
                 </mat-panel-title>
-                <mat-panel-description>
+                <mat-panel-description class="descriptionRight">
                         February 2014 – August 2016 
                 </mat-panel-description>
             </mat-expansion-panel-header>
@@ -133,7 +128,7 @@
                 <mat-panel-title>
                         IBM
                 </mat-panel-title>
-                <mat-panel-description>
+                <mat-panel-description class="descriptionRight">
                         June 2013 – February 2014
                 </mat-panel-description>
             </mat-expansion-panel-header>
@@ -148,7 +143,7 @@
                 <mat-panel-title>
                         Computer Sciences Corporation / DXC
                 </mat-panel-title>
-                <mat-panel-description>
+                <mat-panel-description class="descriptionRight">
                         May 2007 – June 2013
                 </mat-panel-description>
             </mat-expansion-panel-header>
@@ -159,24 +154,47 @@
             </mat-list> 
         </mat-expansion-panel>
         <mat-expansion-panel>
-                <mat-expansion-panel-header>
-                    <mat-panel-title>
-                            Technical Services Associates Inc. DBA Puridiom
-                    </mat-panel-title>
-                    <mat-panel-description>
-                            April 199 – April 2007
-                    </mat-panel-description>
-                </mat-expansion-panel-header>
-                <mat-list>                    
-                    <mat-list-item>     Defined CSC’s mobility offering which had grown out of a successful consulting, hardware and cloud services practice.</mat-list-item>
-                    <mat-list-item>     Established the foundation for the offshore team that would support all development efforts for the company. Trained both associated and consultants that would eventually become the project leads.</mat-list-item>
-                    <mat-list-item>     Create messaging application using email API for notification. (Java Mail API 1.3) </mat-list-item>
-                    <mat-list-item>     Created a reporting system which delivers custom reports in different formats and allows users to schedule a specific delivery time and frequency. </mat-list-item>
-                    <mat-list-item>     Design, create and maintain web applications (Java, JSP, JavaScript, HTML, DHTML). </mat-list-item>
-                    <mat-list-item>     Develop and maintain internal and Client Databases, supporting SQLServer, Oracle, MySql.</mat-list-item>
-                    <mat-list-item>     Develop and maintain existing purchasing application developed with PowerBuilder troubleshooting any problems that may appear and developing enhancements to client specifications. (PowerBuilder 5.x – 9).</mat-list-item>    
-                </mat-list> 
-            </mat-expansion-panel>
+            <mat-expansion-panel-header>
+                <mat-panel-title>
+                        Technical Services Associates Inc. DBA Puridiom
+                </mat-panel-title>
+                <mat-panel-description class="descriptionRight">
+                        April 199 – April 2007
+                </mat-panel-description>
+            </mat-expansion-panel-header>
+            <mat-list>                    
+                <mat-list-item>     Defined CSC’s mobility offering which had grown out of a successful consulting, hardware and cloud services practice.</mat-list-item>
+                <mat-list-item>     Established the foundation for the offshore team that would support all development efforts for the company. Trained both associated and consultants that would eventually become the project leads.</mat-list-item>
+                <mat-list-item>     Create messaging application using email API for notification. (Java Mail API 1.3) </mat-list-item>
+                <mat-list-item>     Created a reporting system which delivers custom reports in different formats and allows users to schedule a specific delivery time and frequency. </mat-list-item>
+                <mat-list-item>     Design, create and maintain web applications (Java, JSP, JavaScript, HTML, DHTML). </mat-list-item>
+                <mat-list-item>     Develop and maintain internal and Client Databases, supporting SQLServer, Oracle, MySql.</mat-list-item>
+                <mat-list-item>     Develop and maintain existing purchasing application developed with PowerBuilder troubleshooting any problems that may appear and developing enhancements to client specifications. (PowerBuilder 5.x – 9).</mat-list-item>    
+            </mat-list> 
+        </mat-expansion-panel>
+    </mat-expansion-panel>
+    <mat-expansion-panel id="education">
+        <mat-expansion-panel-header>
+            <mat-panel-title><mat-icon>book</mat-icon>  <span class="sectionTitle">Education</span> </mat-panel-title>
+            <mat-panel-description></mat-panel-description>
+        </mat-expansion-panel-header>
+        <mat-list>                    
+            <mat-list-item>
+                <mat-icon matListIcon>home</mat-icon>
+                <h3 matLine>Universidad Nacional San Agustin Arequipa</h3>
+                <p matLine>BS Business</p>
+                <p matLine>1993 - 1997</p>
+            </mat-list-item>
+        </mat-list>
+    </mat-expansion-panel>
+    <mat-expansion-panel id="languages">
+        <mat-expansion-panel-header>
+            <mat-panel-title> <mat-icon>sms</mat-icon>  <span class="sectionTitle"> Languages </span> </mat-panel-title>
+            <mat-panel-description></mat-panel-description>
+        </mat-expansion-panel-header>
+        <mat-list>                    
+            <mat-list-item>Spanish - First Language</mat-list-item>
+        </mat-list>
     </mat-expansion-panel>
     
 </mat-accordion>

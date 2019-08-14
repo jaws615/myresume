@@ -15,12 +15,16 @@ import { MatExpansionModule } from '@angular/material/expansion';
 
 import { LayoutModule } from '@angular/cdk/layout';
 import { ExpansionPanelComponent } from './expansion-panel/expansion-panel.component';
+import { ResumeBarComponent } from './resume-bar/resume-bar.component';
+import { MatToolbarModule } from '@angular/material/toolbar';
+import { MatSidenavModule } from '@angular/material/sidenav';
 
 @NgModule({
   declarations: [
     AppComponent,
     ShowMeComponent,
-    ExpansionPanelComponent
+    ExpansionPanelComponent,
+    ResumeBarComponent
   ],
   imports: [
     BrowserModule,
@@ -33,7 +37,9 @@ import { ExpansionPanelComponent } from './expansion-panel/expansion-panel.compo
     MatButtonModule,
     LayoutModule,
     MatListModule,
-    MatExpansionModule
+    MatExpansionModule,
+    MatToolbarModule,
+    MatSidenavModule
   ],
   providers: [],
   bootstrap: [AppComponent]
