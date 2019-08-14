@@ -6,6 +6,7 @@ import { ExpansionPanelComponent } from './expansion-panel/expansion-panel.compo
 
 
 const routes: Routes = [
+  { path: '', redirectTo: '/resumePanel', pathMatch: 'full' },
   { path: 'resume', component: ShowMeComponent },
   { path: 'resumePanel', component: ExpansionPanelComponent }
 ];
